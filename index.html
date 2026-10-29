@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FAF7EF">
+<meta name="description" content="A little illustrated corner of the internet belonging to Navya T — CSE student, music lover, curious mind, and traveller at heart.">
+<title>Navya T — A Little World of Code, Music & Travel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--sage:#A8B8A0;--forest:#34483B;--ivory:#FAF7EF;--cream:#F0EBDD;--pink:#E8C9C5;--butter:#F3DFA0;--lav:#DCD6EA;--ink:#26372d;--muted:#687568;--line:#d8ddcf;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--script:'Caveat',cursive;--shadow:0 18px 45px #34483b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);line-height:1.65;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:10;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E")}a{color:inherit}button,input,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.section{padding:105px 0;position:relative}.eyebrow{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#657964;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:25px;height:1px;background:currentColor}.section-title{font:600 clamp(2.25rem,5vw,3.7rem)/1.13 var(--serif);letter-spacing:-.04em;margin:12px 0 18px;color:var(--forest)}.section-intro{max-width:610px;color:var(--muted);font-size:1.02rem}.script{font:600 1.6rem var(--script);color:#687b62}.nav-shell{position:sticky;top:0;z-index:30;padding:12px 0;background:#faf7efdb;backdrop-filter:blur(14px);border-bottom:1px solid #34483b10}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font:600 1.2rem var(--serif);color:var(--forest);white-space:nowrap}.brand-mark{width:35px;height:35px;border-radius:50% 50% 46% 54%;background:var(--sage);display:grid;place-items:center;transform:rotate(-8deg);font-size:1rem}.nav-links{display:flex;align-items:center;gap:clamp(10px,1.6vw,23px)}.nav-links a{text-decoration:none;font-size:.78rem;font-weight:600;color:#536354;transition:color .2s}.nav-links a:hover{color:#b27479}.nav-hello{background:var(--forest);color:white!important;padding:10px 15px;border-radius:30px}.menu-toggle{display:none;background:var(--cream);border:0;border-radius:50%;width:44px;height:44px;color:var(--forest);font-size:1.25rem;cursor:pointer}
+.hero{min-height:calc(100svh - 64px);display:grid;align-items:center;padding:72px 0 85px;position:relative;isolation:isolate}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px}.hero h1{font:600 clamp(3rem,6vw,5.5rem)/1.04 var(--serif);letter-spacing:-.055em;color:var(--forest);margin:20px 0}.hero h1 em{font-weight:500;color:#b27479}.hero-copy{font-size:1.06rem;color:#657164;max-width:510px}.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid #c8d0c2;border-radius:30px;padding:8px 13px;background:#ffffff78;font-size:.78rem;font-weight:700;color:#596c58}.badge span{width:7px;height:7px;background:#88a07e;border-radius:50%}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--forest);border-radius:30px;padding:13px 20px;text-decoration:none;font-size:.88rem;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer}.btn:hover{transform:translateY(-3px);box-shadow:0 9px 20px #34483b20}.btn-primary{background:var(--forest);color:white}.btn-secondary{background:transparent;color:var(--forest)}.ticker{font:500 1.35rem var(--script);color:#8a9b83;display:flex;align-items:center;gap:9px}.hero-art{min-height:460px;position:relative;display:grid;place-items:center}.sun-disc{width:min(390px,82vw);aspect-ratio:1;border-radius:48% 52% 45% 55%;background:var(--butter);position:absolute;transform:rotate(-8deg)}.art-blob{position:absolute;width:78%;height:83%;background:var(--sage);border-radius:48% 52% 44% 56%;transform:rotate(8deg);opacity:.9}.avatar{position:relative;width:min(340px,72vw);height:370px;z-index:2;display:flex;align-items:flex-end;justify-content:center}.avatar .hair{position:absolute;top:40px;width:210px;height:240px;background:#44372f;border-radius:48% 52% 42% 44%;z-index:1}.avatar .face{position:absolute;top:65px;width:164px;height:190px;background:#e8bda0;border-radius:46% 46% 48% 48%;z-index:2;box-shadow:inset -10px -3px #dba88d}.avatar .fringe{position:absolute;top:43px;width:190px;height:85px;background:#44372f;border-radius:55% 55% 30% 20%;z-index:3;clip-path:polygon(0 0,100% 0,95% 64%,82% 45%,70% 85%,56% 48%,43% 75%,29% 43%,17% 70%,7% 52%)}.eye{position:absolute;top:85px;width:7px;height:10px;border-radius:50%;background:#44372f}.eye.left{left:39px}.eye.right{right:39px}.blush{position:absolute;top:119px;width:25px;height:13px;background:#d98f8e77;border-radius:50%}.blush.left{left:18px}.blush.right{right:18px}.smile{position:absolute;top:126px;left:69px;width:25px;height:12px;border-bottom:2px solid #8d514a;border-radius:0 0 50% 50%}.body-dress{position:absolute;bottom:-5px;width:250px;height:155px;background:#d8cfe7;border-radius:48% 48% 0 0;z-index:4;border:3px solid #34483b20}.collar{position:absolute;top:4px;left:88px;width:70px;height:38px;border-left:3px solid #fff9e8;border-right:3px solid #fff9e8;border-bottom:3px solid #fff9e8;border-radius:0 0 30px 30px}.flower{position:absolute;z-index:5;font-size:2rem;color:#fff9e8}.float{position:absolute;z-index:6;animation:float 5s ease-in-out infinite}.f1{top:45px;right:8%;font-size:2rem;color:#fff}.f2{top:22%;left:1%;font-size:1.7rem;color:#b27479;animation-delay:-2s}.f3{right:4%;bottom:20%;font-size:1.8rem;color:#fff;animation-delay:-1s}.f4{bottom:8%;left:10%;font-size:1.5rem;color:#b27479;animation-delay:-3s}.orbit{position:absolute;border:1px dashed #6c8068aa;border-radius:50%;width:105%;height:75%;transform:rotate(-22deg)}.art-note{position:absolute;bottom:20px;right:0;background:var(--ivory);padding:12px 17px;border-radius:5px 18px 5px 18px;box-shadow:var(--shadow);font:600 1.25rem var(--script);transform:rotate(4deg);z-index:7}.scroll-hint{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:#8b9787}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:center}.notebook{background:#fffdf7;border:1px solid #e4dfd2;box-shadow:var(--shadow);padding:36px 35px 32px 54px;position:relative;transform:rotate(-1deg);border-radius:4px 15px 8px 4px;background-image:repeating-linear-gradient(transparent,transparent 31px,#dfe4d7 32px)}.notebook:before{content:"";position:absolute;left:25px;top:0;bottom:0;width:1px;background:#e8c9c5}.notebook:after{content:"✿";position:absolute;top:-21px;right:22px;font-size:2.2rem;color:#bd8d8c;transform:rotate(14deg)}.notebook p{margin:0 0 16px;line-height:2;color:#4f5d50}.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:25px}.highlight{padding:16px 12px;border-radius:15px;background:#f1eee4;text-align:center;font-size:.78rem;font-weight:700}.highlight span{display:block;font-size:1.7rem;margin-bottom:6px}.highlight:nth-child(2){background:#f4e2df}.highlight:nth-child(3){background:#e6e1f0}
+.education{background:#f2efe5}.edu-layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:65px;align-items:center}.edu-illustration{background:var(--sage);min-height:300px;border-radius:48% 52% 42% 58%;display:grid;place-items:center;position:relative;overflow:hidden}.edu-illustration .book{font-size:7rem;filter:drop-shadow(5px 9px 0 #34483b20);transform:rotate(-10deg)}.edu-illustration .spark{position:absolute;font-size:2rem;color:var(--ivory)}.edu-illustration .spark:nth-child(2){top:18%;left:20%}.edu-illustration .spark:nth-child(3){right:17%;bottom:22%}.timeline{border-left:1px dashed #9cac95;padding-left:30px;margin:20px 0}.timeline-item{position:relative;padding:0 0 27px}.timeline-item:before{content:"";position:absolute;left:-37px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--pink);border:3px solid var(--ivory)}.timeline-item h3{font:600 1.35rem var(--serif);margin:0 0 5px;color:var(--forest)}.timeline-item p{margin:4px 0;color:var(--muted)}.pill{display:inline-block;background:#e2e8dc;padding:5px 10px;border-radius:20px;font-size:.73rem;font-weight:700;margin-top:7px}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.skill-cloud{display:flex;flex-wrap:wrap;gap:12px}.skill{padding:13px 17px;border:1px solid #d5d9cd;border-radius:30px;background:#fffdf8;font-weight:600;font-size:.9rem;transition:.2s}.skill:hover{background:var(--forest);color:white;transform:rotate(-2deg)}.skill:nth-child(2n){background:#f0e4e1;border-color:#f0e4e1}.skill:nth-child(3n){background:#e6e1f0;border-color:#e6e1f0}.skill-note{padding:25px;background:#e7ecdf;border-radius:6px 30px 6px 30px;position:relative}.skill-note:after{content:"✧";position:absolute;right:20px;top:8px;font-size:2rem;color:#8c9c84}
+.music{background:#f4e9df}.music-heading{display:flex;justify-content:space-between;align-items:end;gap:30px}.music-doodle{font-size:4rem;transform:rotate(-12deg);color:#b27479}.mood-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:38px}.mood{min-height:210px;padding:18px 15px;border-radius:100px 100px 18px 18px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:transform .25s}.mood:hover{transform:translateY(-7px) rotate(1deg)}.mood:nth-child(1){background:#dbe4d5}.mood:nth-child(2){background:#e6e0f0}.mood:nth-child(3){background:#dce8eb}.mood:nth-child(4){background:#e7d0ce}.mood:nth-child(5){background:#f3dfa0}.mood-icon{font-size:2.5rem;margin-bottom:13px}.mood h3{font:600 1.05rem var(--serif);margin:0 0 7px}.mood p{font-size:.76rem;margin:0;color:#5e6a5e}.music-note{font:600 clamp(1.6rem,3vw,2.4rem) var(--script);text-align:center;color:#936f6d;margin:38px 0 26px}.playlist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.playlist{display:flex;gap:15px;align-items:center;background:#fffaf3;padding:15px;border-radius:14px;border:1px solid #eadfd4}.cover{width:67px;height:67px;flex:0 0 67px;border-radius:12px;display:grid;place-items:center;font-size:2rem;background:var(--sage)}.playlist:nth-child(2) .cover{background:var(--lav)}.playlist:nth-child(3) .cover{background:var(--butter)}.playlist h4{margin:0;font:600 1rem var(--serif)}.playlist p{margin:3px 0 0;font-size:.76rem;color:var(--muted)}.playlist a{font-size:.75rem;font-weight:700;color:#8a6869}
+.travel{background:#edf0e7}.travel-top{display:flex;justify-content:space-between;align-items:end;gap:25px}.route-art{height:115px;max-width:430px;flex:1;position:relative;border-bottom:1px dashed #8c9c84;margin:0 0 12px 15px}.route-art:before{content:"";position:absolute;left:8%;right:9%;top:53%;height:2px;border-top:2px dotted #8c9c84;transform:rotate(-7deg)}.pin{position:absolute;font-size:1.7rem}.pin.one{left:5%;top:43%}.pin.two{left:45%;top:8%}.pin.three{right:7%;top:47%}.postcard-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}.postcard{background:#fffdf6;padding:12px 12px 20px;box-shadow:var(--shadow);transform:rotate(-1deg);transition:transform .25s}.postcard:nth-child(2){transform:rotate(1.3deg);margin-top:24px}.postcard:nth-child(3){transform:rotate(-.5deg)}.postcard:hover{transform:translateY(-5px) rotate(0)}.postcard-art{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:#c9d8c5}.postcard:nth-child(2) .postcard-art{background:#d9d2e9}.postcard:nth-child(3) .postcard-art{background:#f0d6c9}.postcard-art .landscape{font-size:5rem;filter:drop-shadow(0 8px 0 #34483b12)}.stamp{position:absolute;right:9px;top:9px;border:1px dashed #fff;padding:4px 6px;font-size:.63rem;letter-spacing:.1em;transform:rotate(8deg);color:#fff}.postcard h3{font:600 1.35rem var(--serif);margin:15px 5px 4px}.postcard p{font-size:.83rem;color:var(--muted);margin:0 5px 10px}.status{margin-left:5px;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#7d8c73}.travel-quote{font:500 clamp(1.45rem,3vw,2rem) var(--serif);text-align:center;max-width:800px;margin:48px auto 0;color:#586a55}
+.projects-top{display:flex;align-items:end;justify-content:space-between;gap:20px}.project-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:35px}.project{border-radius:18px;overflow:hidden;border:1px solid #e5e2d8;background:#fffdf8}.project:first-child{grid-row:span 2}.project-visual{min-height:205px;display:grid;place-items:center;position:relative;background:#dce5d6;overflow:hidden}.project:first-child .project-visual{min-height:310px;background:#e8d7d2}.project-visual .window{width:66%;height:68%;border:2px solid #34483b;border-radius:10px;background:#fffdf7;box-shadow:12px 12px 0 #34483b19;transform:rotate(-4deg);padding:12px}.window-top{display:flex;gap:4px;border-bottom:1px solid #ddd;padding-bottom:8px}.window-top i{width:7px;height:7px;background:#d5a5a2;border-radius:50%}.window-lines{height:10px;width:70%;background:#d9e2d3;border-radius:10px;margin:13px 0}.window-blocks{display:flex;gap:8px}.window-blocks span{height:54px;flex:1;background:#e8d8d2;border-radius:5px}.window-blocks span:nth-child(2){background:#dcd6ea}.project-visual .big-icon{font-size:4rem}.project-content{padding:23px}.project-content h3{font:600 1.5rem var(--serif);margin:0 0 7px}.project-content p{color:var(--muted);font-size:.9rem;margin:0 0 15px}.tech{display:flex;gap:7px;flex-wrap:wrap}.tech span{font-size:.7rem;background:#e9eddf;padding:5px 9px;border-radius:20px}.project-links{display:flex;gap:15px;margin-top:16px;font-size:.8rem;font-weight:700}.project-links a{color:#7c6964}.placeholder{font-size:.73rem;color:#8a796e;font-style:italic;margin-top:10px}
+.contact{background:var(--sage);overflow:hidden}.contact:before{content:"✳";position:absolute;top:30px;right:7%;font-size:5rem;color:#ffffff55;transform:rotate(12deg)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}.contact .section-title{color:var(--forest)}.contact-copy{color:#45594a;max-width:430px}.envelope-art{font-size:5rem;margin:22px 0;display:inline-block;transform:rotate(-8deg);filter:drop-shadow(5px 8px 0 #34483b12)}.socials{display:flex;gap:10px;flex-wrap:wrap}.socials a{border:1px solid #536c58;border-radius:30px;padding:8px 13px;text-decoration:none;font-size:.8rem;font-weight:700}.contact-form{background:#faf7ef;padding:30px;border-radius:18px;box-shadow:0 20px 40px #34483b15}.field{margin-bottom:16px}.field label{display:block;font-size:.78rem;font-weight:700;margin-bottom:6px;color:#526352}.field input,.field textarea{width:100%;border:1px solid #d5ddcf;border-radius:9px;padding:12px 13px;background:#fffefa;color:var(--ink);outline:none;transition:border .2s,box-shadow .2s}.field input:focus,.field textarea:focus{border-color:#7c9275;box-shadow:0 0 0 3px #a8b8a044}.field textarea{min-height:125px;resize:vertical}.form-message{font-size:.82rem;margin-top:13px;color:#506c50;min-height:1.4em}.form-hint{font-size:.73rem;color:#7a8275;margin-top:12px}.footer{padding:23px 0;background:var(--forest);color:#e9eee5}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:.78rem}.footer a{text-decoration:none}.back-top{border:1px solid #a8b8a0;border-radius:50%;width:36px;height:36px;display:grid;place-items:center}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(5deg)}}@keyframes drift{0%,100%{transform:translateX(0)}50%{transform:translateX(7px)}}.hero-art .float{animation:float 5s ease-in-out infinite}.hero-art .f2{animation-delay:-2s}.hero-art .f3{animation-delay:-1s}
+@media(max-width:900px){.nav-links{gap:10px}.nav-links a{font-size:.7rem}.hero-grid{gap:10px}.about-grid,.edu-layout,.contact-grid{gap:35px}.mood-grid{grid-template-columns:repeat(3,1fr)}.mood{min-height:180px}.playlist-grid{grid-template-columns:1fr}.postcard-grid{gap:14px}.postcard-art{height:150px}.project-grid{grid-template-columns:1fr 1fr}.project:first-child{grid-row:auto;grid-column:span 2}.project:first-child .project-visual{min-height:250px}}
+@media(max-width:700px){.wrap{width:min(100% - 32px,560px)}.section{padding:75px 0}.nav-shell{padding:9px 0}.menu-toggle{display:grid;place-items:center}.nav-links{display:none;position:absolute;top:calc(100% + 6px);left:16px;right:16px;background:#faf7eff7;border:1px solid #dfe3d8;border-radius:18px;padding:12px;box-shadow:var(--shadow);grid-template-columns:1fr 1fr;gap:4px}.nav-links.open{display:grid}.nav-links a{padding:12px 10px;border-radius:10px;font-size:.84rem}.nav-links a:hover{background:#e9eee4}.nav-links .nav-hello{grid-column:span 2;text-align:center}.hero{padding:48px 0 65px;min-height:auto}.hero-grid{grid-template-columns:1fr;gap:15px}.hero h1{font-size:clamp(2.8rem,12vw,4.3rem);margin:18px 0}.hero-copy{font-size:.98rem}.hero-art{min-height:390px;order:-1}.avatar{transform:scale(.86);transform-origin:bottom center}.sun-disc{width:290px}.art-blob{width:78%;height:82%}.orbit{width:100%;height:70%}.art-note{right:0;bottom:5px}.scroll-hint{display:none}.about-grid,.edu-layout,.skills-grid,.contact-grid{grid-template-columns:1fr}.about-grid{gap:35px}.notebook{padding-right:20px}.highlights{gap:8px}.highlight{font-size:.7rem;padding:13px 7px}.edu-layout{gap:25px}.edu-illustration{min-height:230px;width:min(300px,100%);margin:auto}.skills-grid{gap:25px}.music-heading,.travel-top,.projects-top{align-items:start;flex-direction:column}.music-doodle{display:none}.mood-grid{grid-template-columns:repeat(2,1fr);gap:10px}.mood{min-height:170px;padding:15px 10px}.mood:last-child{grid-column:span 2;min-height:145px;border-radius:80px 80px 18px 18px}.playlist-grid{gap:10px}.postcard-grid{grid-template-columns:1fr;gap:20px}.postcard,.postcard:nth-child(2),.postcard:nth-child(3){transform:none;margin:0}.postcard-art{height:190px}.route-art{width:100%;max-width:none;margin:0}.project-grid{grid-template-columns:1fr}.project:first-child{grid-column:auto}.project:first-child .project-visual{min-height:240px}.contact-form{padding:22px}.footer-inner{align-items:flex-start}.footer-inner span{max-width:250px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav-shell">
+  <nav class="nav wrap" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Navya's Daydream home"><span class="brand-mark">✿</span> navya.t</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#music">Music</a><a href="#travel">Travel</a><a class="nav-hello" href="#contact">Contact ↗</a>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div class="hero-text">
+   <div class="badge"><span></span> CSE Student · Dreamer · Explorer</div>
+   <h1>Hi, I’m Navya.<br>Welcome to my <em>little corner</em> of the internet.</h1>
+   <p class="hero-copy">Computer Science student, curious mind, music lover, and a traveller at heart. I’m learning, creating, and collecting little moments along the way.</p>
+   <div class="actions"><a class="btn btn-primary" href="#about">Explore My World <span>↘</span></a><a class="btn btn-secondary" href="#contact">Say Hello <span>✉</span></a></div>
+   <div class="ticker">✧ Currently learning, growing, and dreaming <span>♡</span></div>
+  </div>
+  <div class="hero-art" aria-label="A playful illustrated character surrounded by stars and flowers">
+   <div class="sun-disc"></div><div class="art-blob"></div><div class="orbit"></div>
+   <span class="float f1">✦</span><span class="float f2">✿</span><span class="float f3">✧</span><span class="float f4">❀</span>
+   <div class="avatar" aria-hidden="true"><div class="hair"></div><div class="face"><span class="eye left"></span><span class="eye right"></span><span class="blush left"></span><span class="blush right"></span><span class="smile"></span></div><div class="fringe"></div><div class="body-dress"><div class="collar"></div></div></div>
+   <div class="art-note">a little life, a lot of wonder ✷</div>
+  </div>
+ </div>
+ <div class="scroll-hint">Scroll gently · there’s more to discover ↓</div>
+</section>
+<section class="section" id="about">
+ <div class="wrap about-grid">
+  <div class="notebook reveal"><p>Dear internet,</p><p>I’m Navya T, a second-year Computer Science and Engineering student at Jawaharlal College of Engineering and Technology, Palakkad.</p><p>I enjoy exploring technology, learning new things, listening to music, and discovering places that make ordinary days feel special. I’m still growing as a developer, and this website is a little space to share my journey.</p><p class="script">More to learn, more to become ♡</p></div>
+  <div class="reveal"><div class="eyebrow">A little about me</div><h2 class="section-title">Curious by nature,<br>creative by heart.</h2><p class="section-intro">I believe the best things happen when curiosity meets a little courage. This is my scrapbook of the things I’m learning and the moments that make me, me.</p>
+   <div class="highlights"><div class="highlight"><span>⌘</span>Learning through code</div><div class="highlight"><span>♫</span>Finding joy in music</div><div class="highlight"><span>✈</span>Collecting travel memories</div></div>
+  </div>
+ </div>
+</section>
+<section class="section education" id="education">
+ <div class="wrap edu-layout">
+  <div class="edu-illustration reveal" aria-hidden="true"><span class="book">📚</span><span class="spark">✦</span><span class="spark">✧</span></div>
+  <div class="reveal"><div class="eyebrow">The learning chapter</div><h2 class="section-title">A little timeline<br>of big beginnings.</h2><p class="section-intro">Every new concept is another page in the story. Here’s where my current chapter is unfolding.</p>
+   <div class="timeline"><div class="timeline-item"><h3>B.Tech — Computer Science and Engineering</h3><p>Jawaharlal College of Engineering and Technology (JCET)</p><p>Palakkad, Kerala</p><span class="pill">Second-year student</span></div><div class="timeline-item"><h3>What’s next?</h3><p>Building foundations, exploring ideas, and discovering which corners of technology spark my curiosity.</p></div></div>
+  </div>
+ </div>
+</section>
+<section class="section" id="skills">
+ <div class="wrap skills-grid">
+  <div class="reveal"><div class="eyebrow">Things I’m growing</div><h2 class="section-title">Small steps,<br>new skills.</h2><p class="section-intro">I’m at the beginning of my developer journey, and I’m excited to keep experimenting, practising, and learning one thing at a time.</p><div class="skill-note" style="margin-top:25px"><span class="script">A work in progress — in the loveliest way.</span><p style="margin:8px 0 0;font-size:.88rem">These are areas I’m exploring, not a list of expert-level claims.</p></div></div>
+  <div class="skill-cloud reveal"><span class="skill">⌘ Programming & problem-solving</span><span class="skill">✿ Web development</span><span class="skill">✧ Creative thinking</span><span class="skill">⚙ Learning new technologies</span><span class="skill">♡ Collaboration</span><span class="skill">☏ Communication</span><span class="skill">☼ Curiosity</span><span class="skill">✎ Keep practising</span></div>
+ </div>
+</section>
+<section class="section music" id="music">
+ <div class="wrap">
+  <div class="music-heading reveal"><div><div class="eyebrow">A soundtrack for the everyday</div><h2 class="section-title">Songs for every<br>little mood.</h2><p class="section-intro">A tiny music journal for the feelings that don’t always fit into words.</p></div><div class="music-doodle" aria-hidden="true">♫ ♬</div></div>
+  <div class="mood-grid reveal">
+   <article class="mood"><div class="mood-icon">☀️</div><h3>Soft mornings</h3><p>Slow starts & warm light</p></article>
+   <article class="mood"><div class="mood-icon">📖</div><h3>Study mode</h3><p>Focus, one page at a time</p></article>
+   <article class="mood"><div class="mood-icon">☔</div><h3>Rainy-day melodies</h3><p>Window-side daydreams</p></article>
+   <article class="mood"><div class="mood-icon">🌙</div><h3>Late-night thoughts</h3><p>Quiet songs, loud feelings</p></article>
+   <article class="mood"><div class="mood-icon">🌼</div><h3>Happy little moments</h3><p>For no reason at all</p></article>
+  </div>
+  <p class="music-note reveal">“Some days need words. Some days just need a song.”</p>
+  <div class="playlist-grid reveal">
+   <article class="playlist"><div class="cover">☁️♫</div><div><h4>Cloud-soft mornings</h4><p>A sample playlist idea · gentle beginnings</p><a href="#contact" data-config-link="music1">Add your playlist link ↗</a></div></article>
+   <article class="playlist"><div class="cover">🌿</div><div><h4>Little focus garden</h4><p>A sample playlist idea · study-time sounds</p><a href="#contact" data-config-link="music2">Add your playlist link ↗</a></div></article>
+   <article class="playlist"><div class="cover">🌙♫</div><div><h4>Moonlight mixtape</h4><p>A sample playlist idea · late-night listening</p><a href="#contact" data-config-link="music3">Add your playlist link ↗</a></div></article>
+  </div>
+ </div>
+</section>
+<section class="section travel" id="travel">
+ <div class="wrap">
+  <div class="travel-top reveal"><div><div class="eyebrow">Postcards from the imagination</div><h2 class="section-title">Places I dream<br>of finding.</h2><p class="section-intro">A little collection of places to dream about. These are inspiration postcards, not claims about places I’ve visited.</p></div><div class="route-art" aria-hidden="true"><span class="pin one">📍</span><span class="pin two">✈️</span><span class="pin three">📍</span></div></div>
+  <div class="postcard-grid reveal">
+   <article class="postcard"><div class="postcard-art"><span class="landscape">🏔️</span><span class="stamp">POSTCARD</span></div><h3>Mountain hush</h3><p>A misty mountain escape with cool air, quiet trails, and a notebook full of thoughts.</p><span class="status">Dream destination · Inspiration</span></article>
+   <article class="postcard"><div class="postcard-art"><span class="landscape">🏯</span><span class="stamp">POSTCARD</span></div><h3>Old-world streets</h3><p>Wandering through winding lanes, tiny cafés, and stories tucked into every corner.</p><span class="status">Want to visit · Inspiration</span></article>
+   <article class="postcard"><div class="postcard-art"><span class="landscape">🌊</span><span class="stamp">POSTCARD</span></div><h3>By the blue sea</h3><p>A breezy shoreline, sunset colours, and the kind of calm that stays with you.</p><span class="status">Dream destination · Inspiration</span></article>
+  </div>
+  <p class="travel-quote reveal">“Not all those who wander are lost; sometimes they’re just collecting stories.”</p>
+ </div>
+</section>
+<section class="section" id="projects">
+ <div class="wrap">
+  <div class="projects-top reveal"><div><div class="eyebrow">Little things in the making</div><h2 class="section-title">Projects & experiments.</h2><p class="section-intro">A home for things I build as I learn. These are placeholders for now—real projects and links can be added when they’re ready.</p></div><a class="btn btn-secondary" href="#contact">Have an idea? ↗</a></div>
+  <div class="project-grid reveal">
+   <article class="project"><div class="project-visual"><div class="window" aria-hidden="true"><div class="window-top"><i></i><i></i><i></i></div><div class="window-lines"></div><div class="window-blocks"><span></span><span></span><span></span></div><div class="window-lines" style="width:45%"></div></div><span style="position:absolute;right:12%;bottom:12%;font-size:2rem">✿</span></div><div class="project-content"><h3>Project one — coming soon</h3><p>A space reserved for a future web project, class experiment, or little idea brought to life through code.</p><div class="tech"><span>Technology: to be added</span><span>Learning in progress</span></div><div class="placeholder">Placeholder only · no completed project or live demo claimed.</div><div class="project-links"><a href="#contact">Project details to come ↗</a></div></div></article>
+   <article class="project"><div class="project-visual"><span class="big-icon">🪴</span><span style="position:absolute;top:18px;right:20px;font-size:1.7rem">✦</span></div><div class="project-content"><h3>Project two — idea garden</h3><p>A future experiment waiting for its first line of code.</p><div class="tech"><span>Tech stack: TBD</span><span>Idea stage</span></div><div class="placeholder">Placeholder only · repository link not yet supplied.</div></div></article>
+   <article class="project"><div class="project-visual" style="background:#e8e0ef"><span class="big-icon">📚</span><span style="position:absolute;top:20px;left:20px;font-size:1.6rem">✧</span></div><div class="project-content"><h3>Project three — someday soon</h3><p>Another little idea to explore as my skills and confidence grow.</p><div class="tech"><span>Tech stack: TBD</span><span>Not started</span></div><div class="placeholder">Placeholder only · no repository or demo link.</div></div></article>
+  </div>
+ </div>
+</section>
+<section class="section contact" id="contact">
+ <div class="wrap contact-grid">
+  <div class="reveal"><div class="eyebrow">The hello corner</div><h2 class="section-title">Let’s make<br>something lovely.</h2><p class="contact-copy">Have a kind thought, a creative idea, or just want to say hello? I’d love to hear from you. Fill in the note and your email app will help you send it.</p><div class="envelope-art" aria-hidden="true">💌</div><p class="script" style="color:#455b48">A little hello can go a long way.</p><div class="socials"><a href="#contact" data-config-link="github">GitHub ↗</a><a href="#contact" data-config-link="linkedin">LinkedIn ↗</a><a href="#contact" data-config-link="instagram">Another corner ↗</a></div></div>
+  <form class="contact-form reveal" id="contactForm" novalidate>
+   <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="What should I call you?"></div>
+   <div class="field"><label for="email">Your email *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+   <div class="field"><label for="subject">Subject *</label><input id="subject" name="subject" required placeholder="A little note about..."></div>
+   <div class="field"><label for="message">Your message *</label><textarea id="message" name="message" required placeholder="Write your little hello here..."></textarea></div>
+   <button class="btn btn-primary" type="submit">Send a little hello <span>↗</span></button>
+   <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+   <p class="form-hint">Your email app will open with a draft ready. You’ll need to press Send there. Nothing is sent automatically.</p>
+  </form>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>Made with curiosity and a little daydream. ✿</span><span>© <span id="year"></span> Navya T · <a href="#home">Back to the top ↑</a></span><a class="back-top" href="#home" aria-label="Back to top">↑</a></div></footer>
+<script>
+/* EDIT THESE VALUES to personalise the site. Leave blank links until real profile URLs are available. */
+const SITE_CONFIG = {
+  email: "YOUR_EMAIL@example.com",
+  links: {
+    github: "",
+    linkedin: "",
+    instagram: "",
+    music1: "",
+    music2: "",
+    music3: ""
+  }
+};
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{
+  const open=navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded',String(open));
+  menuToggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+  menuToggle.textContent=open?'×':'☰';
+});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.setAttribute('aria-label','Open navigation menu');
+  menuToggle.textContent='☰';
+}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}});
+document.getElementById('year').textContent=new Date().getFullYear();
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if('IntersectionObserver' in window && !reducedMotion){
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
+document.querySelectorAll('[data-config-link]').forEach(link=>{
+ const key=link.dataset.configLink;
+ const url=SITE_CONFIG.links[key];
+ if(url && /^https?:\/\//i.test(url)){link.href=url;link.target='_blank';link.rel='noopener noreferrer';}
+ else if(['github','linkedin','instagram'].includes(key)){link.addEventListener('click',e=>{e.preventDefault();document.getElementById('formMessage').textContent='Add your real '+key+' URL in SITE_CONFIG.links to activate this profile link.';document.getElementById('contact').scrollIntoView({behavior:reducedMotion?'auto':'smooth'});});}
+ else {link.addEventListener('click',e=>{e.preventDefault();document.getElementById('formMessage').textContent='Add your real playlist URL in SITE_CONFIG.links to activate this playlist.';document.getElementById('contact').scrollIntoView({behavior:reducedMotion?'auto':'smooth'});});}
+});
+const form=document.getElementById('contactForm');
+const formMessage=document.getElementById('formMessage');
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const email=document.getElementById('email').value.trim();
+ const subject=document.getElementById('subject').value.trim();
+ const message=document.getElementById('message').value.trim();
+ const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+ if(!name||!email||!subject||!message){formMessage.textContent='A tiny note is missing—please fill in every field.';return;}
+ if(!emailPattern.test(email)){formMessage.textContent='That email address doesn’t look quite right. Please check it and try again.';document.getElementById('email').focus();return;}
+ const recipient=SITE_CONFIG.email.trim();
+ if(!recipient||recipient==='YOUR_EMAIL@example.com'||!emailPattern.test(recipient)){
+   formMessage.textContent='The form is ready, but Navya’s real email address has not been configured yet. Update SITE_CONFIG.email in the code first.';
+   return;
+ }
+ const body=`From: ${name}\nReply-to: ${email}\n\n${message}`;
+ const mailto=`mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+ formMessage.textContent='Your email app should open with a draft. Please review it and press Send there.';
+ window.location.href=mailto;
+});
+</script>
+</body>
+</html>
